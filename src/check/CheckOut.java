@@ -19,6 +19,7 @@ import javax.swing.KeyStroke;
  *
  * @author jenniferschofield
  */
+// CheckOut Class: Manage check out for the books
 public class CheckOut extends javax.swing.JInternalFrame {
 
     /**
@@ -132,7 +133,7 @@ public class CheckOut extends javax.swing.JInternalFrame {
         owner.checkout(Integer.parseInt(card.getText()), Integer.parseInt(item.getText()));
         clear(evt);
     }//GEN-LAST:event_checkOutButtonActionPerformed
-
+    // Clear the text field
     private void clear(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clear
        card.setText("");
        item.setText("");
